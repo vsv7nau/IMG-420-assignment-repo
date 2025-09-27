@@ -8,7 +8,7 @@ new interactive features in the form of my favorite thing to stare at for HOURS,
 
 ### 1. Bouncing Movement
 
--   Moves automatically within a defined rectangular area which can be changed\
+-   Moves automatically within a defined rectangular area which can be changed
 -   Properties:
     -   `bounce_speed` (float, default 200)
     -   `bounce_area_size` (Vector2, default 800x600)
@@ -18,7 +18,7 @@ new interactive features in the form of my favorite thing to stare at for HOURS,
 
 ### 2. Color Cycling( extra credit feature )
 
--   Cycles sprite colors over time similar to how the DVD logos would\
+-   Cycles sprite colors over time similar to how the DVD logos would
 -   Properties:
     -   `cycle_time` (float, default 2.0s)
     -   `color_cycle_colors` (Array\[Color\], defaults to RGBA set)
@@ -36,5 +36,6 @@ new interactive features in the form of my favorite thing to stare at for HOURS,
 - `start_effects()` -- enable bounce + cycling
 - `stop_effects()` -- disable both
 - `reset_position()` -- reset position & color
+
 
 
