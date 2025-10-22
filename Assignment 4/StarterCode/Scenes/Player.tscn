@@ -1,0 +1,43 @@
+[gd_scene load_steps=5 format=3 uid="uid://dhakbhkb3wxmn"]
+
+[ext_resource type="Script" path="res://Scripts/Player.cs" id="1_kpblb"]
+[ext_resource type="Texture2D" uid="uid://bgm7mj18l5nxl" path="res://Assets/player.png" id="2_qjnvg"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3lm8w"]
+animations = [
+{
+"frames": [
+{
+"duration": 1.0,
+"texture": ExtResource("2_qjnvg")
+}
+],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+},
+{
+"frames": [
+{
+"duration": 1.0,
+"texture": ExtResource("2_qjnvg")
+}
+],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}
+]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gvr2j"]
+size = Vector2(32, 32)
+
+[node name="Player" type="CharacterBody2D"]
+script = ExtResource("1_kpblb")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_3lm8w")
+animation = &"idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_gvr2j")

@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://c3o8wxd8u37kx"]
+
+[ext_resource type="Script" path="res://Scripts/Pickup.cs" id="1_q1y0u"]
+[ext_resource type="Texture2D" uid="uid://bdoxl3p0f2g0j" path="res://Assets/pickup.png" id="2_e7ujx"]
+[ext_resource type="PackedScene" uid="uid://c6yddiwdhaw7w" path="res://Scenes/PickupParticles.tscn" id="3_h8tnv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_p5qcy"]
+size = Vector2(24, 24)
+
+[node name="Pickup" type="Area2D"]
+script = ExtResource("1_q1y0u")
+ParticlesScene = ExtResource("3_h8tnv")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_e7ujx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_p5qcy")
