@@ -2,8 +2,7 @@
 
 This assignment demonstrates advanced Godot engine features including custom shaders, rigid body physics with joints, and raycasting for collision detection.
 
-## Part 1: Custom Canvas Item Shader with Particles (3 points)
-
+## Part 1: Custom Canvas Item Shader with Particles
 ### How the Shader Works
 
 The custom particle shader (`custom_particle.gdshader`) implements:
